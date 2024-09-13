@@ -16,6 +16,8 @@ class Shape:
         :param color1: The color of the shape. Defaults to None
         """
         self.color = color1
+        self.area = 0
+        self.perimeter = 0
 
     def set_color(self, color):
         """
@@ -36,14 +38,14 @@ class Shape:
         Computes the area of the shape
         :return: (int) The area of the shape (default is 0 for the base Shape class).
         """
-        return 0
+        return self.area
 
     def get_perimeter(self):
         """
         Computes the perimeter of the shape
         :return: (int) The perimeter of the shape (default is 0 for the base Shape class)
         """
-        return 0
+        return self.perimeter
 
 
 if __name__ == '__main__':
